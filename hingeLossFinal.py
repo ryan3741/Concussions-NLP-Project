@@ -219,10 +219,6 @@ def learnPredictor(trainExamples, testExamples, featureExtractor, numIters, eta)
     print("")
     return weights
 
-#trainExamples = [("yes and",1),("no",-1), ("yes and",1), ("nah",-1)]
-#testExamples = [("yes and",1),("no",-1), ("yes and",-1)]
-
-
 
 def readData(pathArray):   
     labeledData = []
@@ -249,20 +245,6 @@ def readData(pathArray):
 trainDataPath = ["/Users/ryancrowley/Desktop/Project221/NEISS_2017.csv"]
 testDataPath = ["/Users/ryancrowley/Desktop/Project221/NEISS_2018.csv"]
 
-#trainDataPath = [
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2009.csv", 
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2010.csv",
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2011.csv", 
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2012.csv",
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2013.csv",
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2014.csv", 
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2015.csv",
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2016.csv"]
-
-#testDataPath = [
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2017.csv",
-#"/Users/ryancrowley/Desktop/Project221/NEISS_2018.csv"]
-
 
 trainData, trainWordCount = readData(trainDataPath)
 testData, testWordCount = readData(testDataPath)
@@ -275,5 +257,3 @@ for elem in topFive:
 print("------")
 for elem in bottomFive:
     print(elem)
-
-#print(weights)
