@@ -27,3 +27,4 @@ HingeLossFinal.py contains the final code for the model using hinge loss functio
 word features.
 LogisticLossFinal.py contains the final code for the model using logistic loss function with
 unigram word features.
+Final_report provides a written description of the approach taken and the results achieved.
