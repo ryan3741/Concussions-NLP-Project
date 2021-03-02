@@ -258,11 +258,3 @@ weights = learnPredictor(trainData,testData,extractWordFeatures,100,.01)
 
 
 topFive, bottomFive = getFive(weights, trainWordCount)
-#print("------")
-#for elem in topFive:
-#    print(elem)
-#print("------")
-#for elem in bottomFive:
-#    print(elem)
-
-#print(weights)
